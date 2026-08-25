@@ -1,0 +1,45 @@
+
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+		
+		
+		<form method="post" >
+		
+			First Name: <input type="text" name="f_name" required> <br><br>
+			
+			Quantity <input type="number" name="Quantity" required min="1" max="5"> <br><br>
+			
+			DOB <input type="date" name="date" required max="2000-04-01"> <br><br>
+			
+			Appointment date <input type="date" name="date" required min="2025-04-19"> <br><br>
+			
+			Password : <input type="password" name="password" required minlength="8" maxlength="12"> <br><br>
+			
+			Email: <input type="email" name="email" required> <br><br>
+			
+			
+			<!--
+			
+			pattern="[a-zA-Z0-9 ]+"       Letters, spaces, and numbers (Alphanumeric with space):
+			pattern="[a-zA-Z][a-zA-Z ]*"  Letters and spaces, but must not start with a space
+			pattern="[a-zA-Z\s]+"         Allowing standard spaces and tabs (\s)
+			pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"   1. Formatted US/Canadian Numbers (123-456-7890)
+			
+			-->
+			Name: <input type="text" name="name" required pattern="[a-zA-Z]+"  title="ADD ALPHA"> <br><br>
+			
+			Name: <input type="text" name="name" required pattern="[a-zA-Z]{8,12}"  title="ADD ALPHA & MIN 8 TO 12"> <br><br>
+			
+			Mobile: <input type="number" name="number" required pattern="[0-9]{10}"  title="ADD mobile"> <br><br>
+			
+			<input type="submit" name="submit" value="Register">
+			
+		</form>
+		
+		
+	</body>
+</html>

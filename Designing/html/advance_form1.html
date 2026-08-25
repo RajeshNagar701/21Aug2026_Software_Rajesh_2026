@@ -1,0 +1,59 @@
+
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+		
+		
+		<form method="post" enctype="multipart/form-data">
+		
+			First Name: <input type="text" name="f_name" size="50px"> <br><br>
+			Last Name: <input type="text" name="lname" value="Raj Nagar"> <br><br>
+			Email: <input type="email" name="email" placeholder="Enter Email"> <br><br>
+			Name: <input type="text" name="f_name" readonly value="Nagar"> <br><br>
+			Name: <input type="text" name="f_name" disabled value="Nagar"> <br><br>
+			Gender :
+			<br>
+			Male : <input type="radio" name="gender" value="Male" checked>
+			Female : <input type="radio" name="gender" value="Female"> <br><br>
+			
+			Country :				
+			<select name="country">
+				<option value="India"> India </option>
+				<option value="Japan" selected> Japan </option>
+				<option value="Rasia"> Rasia </option>
+				<option value="UK"> UK </option>
+				<option value="USA"> USA </option>
+			</select>
+			<br><br>
+			
+			Enter Roll No: <input type="number" name="number" autofocus> <br><br>
+			
+			<!-- 
+			jab bhi app input type="file" 
+			apko form tag me =>  enctype="multipart/form-data"
+			
+			<form method="post" enctype="multipart/form-data">
+			
+			-->
+			Upload file/image :<input type="file" name="file" multiple><br><br>
+			
+			
+			
+			<hr>
+			
+		
+		</form>
+		
+		<hr>
+		
+			<!--- validation -->
+			
+		<form>	
+			First Name: <input type="text" name="f_name" > <br><br>
+		</form>
+		
+	</body>
+</html>
