@@ -1,0 +1,48 @@
+
+.header1{
+	width:100%;
+	height:100px;
+	background-color:blue;
+	float:left;	
+	text-align:center;
+}
+
+.navbar{
+	width:100%;
+	height:60px;
+	background-color:black;
+	float:left;	
+	text-align:center;
+	color:white;
+}
+.sidebar{
+	width:15%;
+	height:500px;
+	background-color:lightGray;
+	float:left;	
+	text-align:center;
+	color:white;
+}
+.mainbar{
+	width:70%;
+	height:auto;
+	background-color:lightBlue;
+	float:left;	
+	text-align:center;
+	color:white;
+}
+
+.footer{
+	width:100%;
+	height:100px;
+	background-color:black;
+	float:left;	
+}
+
+.footer_box{
+	width:25%;
+	height:auto;
+	color:white;
+	text-align:center;
+	float:left;
+}
