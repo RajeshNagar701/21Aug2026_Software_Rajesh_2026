@@ -7,77 +7,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-	
+	<!-- html comment -->
 	<style>
 		
+		/* css comment -> grouping css*/
 		
-		/* comment its grouping css */
+		h2,h3{color:red;background-color:pink;text-align:center}
 		
-		h1,h2,h3{color:red;background-color:yellow;text-align:center}
+		.myp1{color:yellow;background-color:blue}
+		.uppercase{text-transform:uppercase}
+		.centre{text-align:center}
 		
-		.test1{color:green;background-color:orange;text-align:right}
-		
-		.underline{ text-decoration:underline}
-		
-		.upper{ text-transform:uppercase}
-		
-		#test2{color:red;background-color:pink;text-align:left}
+		#myp2{color:orange;background-color:green}
 		
 		
-		.mystyle{
-			width:25%;
+		.box{
 			height:200px;
+			width:200px;
 			background-color:red;
-			color:white;
-			float:left;
 		}
-		
-		.mystyle h4{
-			font-size:20px;
+		.box h1{
+			color:white;
 			text-align:center;
 		}
 		
-		
-		
+		h4.mystyle{
+			background-color:purple;
+			text-align:center;
+			text-decoration:underline;
+		}
 		
 	</style>
-   
+	
 </head>
 <body>
 	
-    <h1>Hi i am inline css</h1>
-    <h1>Hi i am inline css</h1>
-    <h1>Hi i am inline css</h1>
-   
     <h2>Hi i am inline css</h2>
+	<h2>Hi i am inline css</h2>
 	<h2>Hi i am inline css</h2>
 	
 	<h3>Hi i am inline css</h3>
-	<h3>Hi i am inline css</h3>
+   
+	<p class="myp1">Hi i am paragraph</p>
+	<p class="myp1 uppercase centre">Hi i am paragraph</p>
+	<p class="myp1 centre">Hi i am paragraph</p>
 	
+	<p id="myp2">Hi i am paragraph</p>
+	<p id="myp2">Hi i am paragraph</p>
+	<p id="myp2">Hi i am paragraph</p>
 	
-	<p class="test1">Hi i am inline css</p>
-	<p class="test1 underline upper">Hi i am inline css</p>
-	<p class="test1 upper">Hi i am inline css</p>
-	
-	<p id="test2">Hi i am inline css</p>
-	<p id="test2">Hi i am inline css</p>
-	<p id="test2">Hi i am inline css</p>
-	
-	
-	<div class="mystyle">
-		<h4>Box 1</h4>
-	</div>
-	<div class="mystyle">
-		<h4>Box 2</h4>
-	</div>
-	<div class="mystyle">
-		<h4>Box 3</h4>
-	</div>
-	<div class="mystyle">
-		<h4>Box 4</h4>
+	<div class="box">
+		<h1>i m box h1</h1>
 	</div>
 	
-	<h4>Box 4</h4>
+	<h4 class="mystyle">i m box h1</h4>
+	<h5 class="mystyle">i m box h1</h5>
+	
 </body>
 </html>
