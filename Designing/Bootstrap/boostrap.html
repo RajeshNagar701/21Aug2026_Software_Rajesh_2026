@@ -1,6 +1,4 @@
 <!--
-
-https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp
 https://www.w3schools.com/bootstrap5/
 
 What is Bootstrap?
@@ -24,6 +22,9 @@ Bootstrap also gives you the ability to easily create responsive designs
 
 
 https://www.w3schools.com/bootstrap5/
+
+1) Include Bootstrap 5 from a CDN / link 2
+2) Download Bootstrap 5 from getbootstrap.com
 
 
 Requirement :
@@ -113,6 +114,33 @@ Requirement :
 	</div>
 
 	<div class="container mt-3">
+	  <h2>Button Styles</h2>
+	  <button type="button" class="btn">Basic</button>
+	  <button type="button" class="btn btn-primary">Primary</button>
+	  <button type="button" class="btn btn-secondary">Secondary</button>
+	  <button type="button" class="btn btn-success">Success</button>
+	  <button type="button" class="btn btn-info">Info</button>
+	  <button type="button" class="btn btn-warning">Warning</button>
+	  <button type="button" class="btn btn-danger">Danger</button>
+	  <button type="button" class="btn btn-dark">Dark</button>
+	  <button type="button" class="btn btn-light">Light</button>
+	  <button type="button" class="btn btn-link">Link</button>      
+	</div>
+	
+	<div class="container mt-3">
+	  <h2>Button Outline</h2>
+	  <button type="button" class="btn btn-outline-primary">Primary</button>
+	  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+	  <button type="button" class="btn btn-outline-success">Success</button>
+	  <button type="button" class="btn btn-outline-info">Info</button>
+	  <button type="button" class="btn btn-outline-warning">Warning</button>
+	  <button type="button" class="btn btn-outline-danger">Danger</button>
+	  <button type="button" class="btn btn-outline-dark">Dark</button>
+	  <button type="button" class="btn btn-outline-light text-dark">Light</button>
+	</div>
+
+
+	<div class="container mt-3">
 		<h2>Basic Table</h2>
 		<p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
 		<table class="table table-hover">
@@ -181,45 +209,13 @@ Requirement :
 
 	<hr>
 
-	<div class="container">
-		<form action="" method="post" enctype="multipart/form-data">
-			<table align="center" class="table table-dark" width="70%">
-				<tr>
-					<td width="30%">First Name:</td>
-					<td width="70%"><input type="text" class="form-control" name="firstname" required ></td>
-				</tr>
-
-				<tr>
-					<td>First Name:</td>
-					<td><input type="text" name="firstname" class="form-control" required ></td>
-				</tr>
-
-				<tr>
-					<td>First Name:</td>
-					<td><input type="text" name="firstname" class="form-control" required ></td>
-				</tr>
-
-				<tr>
-					<td>First Name:</td>
-					<td><input type="text" name="firstname" class="form-control" required ></td>
-				</tr>
-
-				<tr>
-					<td>First Name:</td>
-					<td><input type="text" name="firstname" class="form-control" required></td>
-				</tr>
-
-				<tr>
-					<td><input type="submit" class="btn btn-success" name="submit"></td>
-
-				</tr>
-
-			</table>
-		</form>
+	
+	<div class="container-fluid bg-danger p-5">
+		<h1> Pading  p-1,2,3,4,5</h1>
 	</div>
-
-
-
+	<div class="container-fluid bg-primary ps-5 pt-5">
+		<h1> Pading  ps pe pt pb -1,2,3,4,5</h1>
+	</div>
 
 </body>
 
