@@ -1,0 +1,28 @@
+
+
+<h1 id='test'></h1>
+
+<script>
+
+	setTimeout(display1,5000); // call function automatic after seconds
+	
+	function display1(){
+		document.getElementById('test').innerHTML="Happy Birthaday";
+	}
+
+</script>
+
+
+<h1 id='demo'></h1>
+
+<script>
+
+	setInterval(display2,1000); // call function automatic in interval of second
+	
+	function display2(){
+		var today=new Date();
+		var time=(today.getHours()) + ":" + (today.getMinutes()) + ":" + (today.getSeconds());
+		document.getElementById('demo').innerHTML=time;
+	}
+
+</script>

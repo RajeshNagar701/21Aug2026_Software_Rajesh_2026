@@ -1,0 +1,19 @@
+
+
+<h1 id='test'></h1>
+
+
+<script>
+
+ //Display OR CALL "watch" every second (500 milliseconds):
+ 
+
+ setInterval(watch,'1000')
+ function watch(){
+	var today=new Date();
+	var time=(today.getHours()) + ":" + (today.getMinutes()) + ":" + (today.getSeconds());
+	document.getElementById('test').innerHTML=time;
+ }
+
+
+</script>
