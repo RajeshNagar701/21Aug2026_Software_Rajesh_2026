@@ -1,3 +1,27 @@
+
+<!--
+
+CSS Manuplation 
+	
+	we can cange any css style by .style 
+	
+	.style.propery
+	
+	
+	CSS CSS                 javascript css
+	========================================
+	color    				color
+	background-color		backgroundColor
+	font-size				fontSize
+	
+	
+	Note : remove - after that upercase first latter
+	
+--!>
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,9 +32,9 @@
 	
 	function myfunction()
 	{
-		document.getElementById('test').style.color="red";
-		document.getElementById('test').style.backgroundColor="yellow";
-		document.getElementById('test').style.textTransform="uppercase";
+		document.getElementById('test').style.color="yellow";
+		document.getElementById('test').style.backgroundColor="red";
+		document.getElementById('test').style.textAlign="center";
 	}
 </script>
 
@@ -18,9 +42,11 @@
 
 <body>
 
-<input type="submit" name="submit" value="click here" ondblclick="myfunction()">  <!-- onclick HTML EVENT-->
+	<input type="submit" name="submit" ondblclick="myfunction()">  <!-- onclick HTML EVENT-->
 
-<h1 id="test" style="color:blue">This is style given by javascript function</h1>
+	<h1 id="test" style="color:blue;background-color:yellow">
+		This is style given by javascript function
+	</h1>
 
 <hr>
 
