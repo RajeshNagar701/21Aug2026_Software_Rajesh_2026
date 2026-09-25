@@ -1,0 +1,142 @@
+
+Lecture 1
+
+
+1) Resume as per given with AI 
+ 
+2) Designing => HTML HTML5 , CSS CSS3 , Bootsrap 5
+
+HTML
+
+=> WHAT IS HTML
+	TEXT FORMATING TAG
+	LIST
+	TABLE
+	FORM input
+		form method
+		validation
+		attribute
+	image & link
+	
+=> What is HTML5
+		HOW TO DEFINE
+		WHATS NEW
+			SEMANTRIC ELEMENT
+			MULTIMEDIA TABLE	
+			GRAPHIC TAG  =>
+			IMOGI / ICONS
+			
+			
+			
+			
+  Task 1 : Signup Form with Full Validation by HTML 5
+  
+=============================================
+CSS & CSS 3
+
+	WHAT IS CSS
+	HOW MANY TYPE APPLY - 3
+	APPLY BY ID & CLASS
+	CSS TEXT PROPERTIES
+	BACKGROUND 
+	BORDER
+	MARGIN PADDING
+	DISPLAY FLEX
+	ICONS : FONT AWSOME 4 & 5
+	POSITION 
+	
+	WHAT IS CSS3
+		RESPONSIVE - MEDIA QURIES
+		GRID : 12
+		
+		ROW -> COL
+		
+		RESPONSIVE
+			RESOLUTION _> DESKOP > 768
+						  TABLET > 600
+						  MOBILE < 600	
+	
+	Task 2 :  1 page Home web Layout Create grid RESPONSIVE 
+	
+====================================================
+Boostrap 5
+
+	framwork of css & html
+	2 type of load boottrsap  1) dowanload 2) cdn 
+	class=>
+		container 
+		color text-color bg-color
+		button btn btn-primary
+		form form-control
+		table
+		grid _> row col-sm md lg xl xxl
+		
+	card 
+	model 
+	carousel/slider
+	collaps hide/show
+	toast
+	nav navbar
+	dropdown
+
+Task 3 :  3 page web site by grid RESPONSIVE
+			  index
+			  About
+			  Blog
+			  Contact
+
+Exa: Folder Structure
+	css
+	js
+	images
+
+	index.html
+	about.html	  
+============================================================	
+	
+Lecture 2 : JavaScript
+
+	=> Javascript : what how when where
+
+	Variable , name of variable ,data type 
+		Primitive
+		not Primitive
+
+	Conditional Statement 
+	Loop
+	Operator
+	Function : user define , builtin
+	
+	Event : key , keyborad , mousem window screen 
+
+
+========================================================
+Advance Javascript
+
+	Date Function
+	Dialogue Box/ Popup  
+	Function :
+		Number
+		String
+		Array
+		   Management
+		   Sorting 
+		   loop
+
+	DOM :  HTML / CSS
+
+
+Task : calculator create 
+
+=======================================================
+
+
+====================================================================	
+	
+
+	
+	
+
+		
+		
+	
