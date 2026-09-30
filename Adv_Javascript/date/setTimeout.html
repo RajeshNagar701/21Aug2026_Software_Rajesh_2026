@@ -1,0 +1,37 @@
+
+<!--
+setTimeout()
+setInterval()
+-->
+
+
+<h2 id="demo"></h2>
+
+<script>
+setTimeout(myGreeting, 5000);
+
+function myGreeting() 
+{
+  document.getElementById("demo").innerHTML="Happy Birthday!";
+}
+
+</script>
+
+<h2 style="background-color:red;color:white" id="time"></h2>
+
+<script>
+
+setInterval(displayHello, 1000); //this function call function in 1 sec interval
+
+function displayHello() 
+{
+  var d = new Date();
+  let text4 = d.toLocaleTimeString();
+  document.getElementById("time").innerHTML = text4;
+}
+
+
+</script>
+
+
+
