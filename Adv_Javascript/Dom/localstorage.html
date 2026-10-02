@@ -1,0 +1,46 @@
+
+
+
+<button onclick="createSes()">Create</button>
+<button onclick="getSes()">Get</button>
+<button onclick="removeSes()">Remove</button>
+
+<script>
+
+/*
+
+The localStorage object allows you to save key/value pairs in the browser.
+that variable in object format exa : { name:"Raj Nagar" };
+
+
+The localStorage object stores data with no expiration date.
+
+The data is not deleted when the browser is closed,
+and are available for future sessions.
+
+localStorage.setItem
+localStorage.getItem
+localStorage.removeItem
+
+*/
+
+
+// create
+function createSes() 
+{					// var name  // var value 
+  localStorage.setItem("name", "Smith");
+}
+
+//view/print
+function getSes() 
+{
+  document.write(localStorage.getItem("name"));
+}
+
+// delete
+function removeSes() 
+{
+  localStorage.removeItem("name");
+}
+
+</script>

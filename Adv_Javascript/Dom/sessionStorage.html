@@ -1,0 +1,55 @@
+
+
+
+<button onclick="createSes()">Create</button>
+<button onclick="getSes()">Get</button>
+<button onclick="removeSes()">Remove</button>
+
+<script>
+
+/*
+
+The sessionStorage object let you store key/value pairs in the browser.
+
+The sessionStorage object stores data for only one session.
+
+(The data is deleted when the browser is closed).
+
+sessionStorage.setItem
+sessionStorage.getItem
+sessionStorage.removeItem
+
+
+session storage vs local storage
+
+Session storage and local storage are both web storage features. 
+The main difference is how long data stays. 
+Local storage keeps data forever until you delete it. 
+Session storage deletes data as soon as you close the 
+browser tab. 
+
+Both hold about 5MB to 10MB of.
+ 
+ 
+*/
+
+
+// create
+function createSes() 
+{					// var name  // var value 
+  sessionStorage.setItem("name", "Raj Nagar");
+}
+
+//view/print
+function getSes() 
+{
+  document.write(sessionStorage.getItem("name"));
+}
+
+// delete
+function removeSes() 
+{
+  sessionStorage.removeItem("name");
+}
+
+</script>
