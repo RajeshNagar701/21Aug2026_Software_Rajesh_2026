@@ -9,31 +9,6 @@ var result=arr1.concat(arr2);
 document.writeln(result);  
 
 
-
-//It returns the newly created array iterator object. 
-//The iterator object represents each element of the array with 
-//keys assigned to them.
-
-
-var arr=['John','Michael','Embrose','Herry','Lewis'];  
-var itr=arr.entries();  
-for(var e of itr) //for loop using var.  
-{  
-	document.write(e+"</br>");  
-}  
-
-
-//The JavaScript array every() method checks whether all the given 
-//elements in an array are satisfying the provided condition
-var marks=[50,40,45,37,20];  
-  
-function check(value)  
-{  
-  return value>10;  //return false, as marks[4]=20  
-}  
-document.writeln(marks.every(check) + "</br>");  
-
-
 //It returns a newly created array containing all the sub-array 
 //elements concatenated into it.
 var arr=[90,18,[89,56],[13,20,[67,17]]]; //given multidimensional array  
@@ -56,18 +31,6 @@ document.writeln(arr + "</br>");
 //The string will get converted to an array.  
 var arr=Array.from("You are viewing an example of string"); 
 document.write("The resultant is: <br>" + arr  + "</br>");  
-
-
-//filter() method filter and extract the element of an array that satisfying the provided condition.
-
-var marks=[50,40,45,37,20];  
-  
-function check(value)  
-{  
-  return value>30;    
-}  
-  
-document.writeln(marks.filter(check) + "</br>");  
 
 //The JavaScript array find() method returns the first element of the given array that satisfies the provided function condition.
 
@@ -118,20 +81,6 @@ document.writeln(result);
 
 
 
-var arr=['John','Tom','James','Sheero']; // An array is defined  
-function ismatching(arr)  
-{  
-return arr=='Sheero';  
-} //It matches if any element in the array is equal to Sheero.  
-var chk=arr.some(ismatching);  
-document.write("Yes, "+chk+". One match found.");  
-
-//It removes and returns the first element of an array.
-//The shift() method is represented by the following syntax:
-
-var arr=["AngularJS","Node.js","JQuery"];
-var result=arr.shift();
-document.writeln(result + "<br>");
 
 //It returns a new array containing the copy of the part 
 //of the given array. The slice() method is represented by the following syntax:
