@@ -16,21 +16,20 @@
   <body>
     
     <div class="container mt-5">
-		
-	  <div class="spinner-border text-danger" id="spin"></div>	
+	
       <div class="row" id="mydiv">
 		
 	  </div>
     </div>
     <script>
          
-      let mydiv = document.getElementById("mydiv");
-
-      function showData(objarr) 
-	  {
-		for(const myData of objarr) 
+    let mydiv = document.getElementById("mydiv");
+	
+	function datafetch(obj){
+		
+		for(const myData of obj) 
 		{
-		  let htmlData = `<div class="col-md-2">
+		  let htmlData = `<div class="col-md-3">
 			<div class="card">
 			  <img src="${myData.image}" style='height:200px' class="card-img-top" alt="" />
 			  <div class="card-body">
@@ -42,16 +41,16 @@
 		  
 		  mydiv.insertAdjacentHTML("afterbegin", htmlData);
 		}
-      }
-	  
+	}
+	
+     
      
 	fetch("https://fakestoreapi.com/products")
 	  .then((response) => {
 		return response.json();
 	  })
 	  .then((objarr) => {
-		showData(objarr);
-		document.getElementById('spin').style.display="none";
+			datafetch(objarr)
 	  })
 	  .catch((err) => console.log(err));
 	  
