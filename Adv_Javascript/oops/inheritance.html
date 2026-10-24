@@ -9,8 +9,6 @@ class b extends a{
 obj=new b;
 
 
-
-
 To create a class inheritance, use the extends keyword.
 A class created with a class inheritance inherits all the methods from another class:
 Type of inheritance
@@ -44,17 +42,20 @@ class xyz extends abc
 {
 	multi()
 	{
-		var a=20;
+		var a=10;
 		var b=20;
 		var multi;
 		multi=a*b;
 		document.write(multi);
 	}
 }
+
 var obj=new xyz;
 obj.sum();
 obj.multi();
+
 */
+
 /*
 class abc
 {
@@ -71,21 +72,26 @@ class abc
 }
 class xyz extends abc
 {
-	constructor(a,b){
+	constructor(a,b,c){
 		super(a,b)
+		this.c=c;
 	}
 	multi()
 	{
 		var multi;
-		multi=this.a*this.b;
+		multi=this.a*this.b*this.c;
 		document.write(multi + "<br>");
 	}
 }
-var obj=new xyz(10,8);
+var obj=new xyz(10,8,5);
 obj.sum();
 obj.multi();
 
 */
+
+
+
+
 
 
 /*

@@ -1,0 +1,111 @@
+<script>
+/*
+
+Error handling and debugging
+
+
+Error handling and debugging in JavaScript ensure that your applications remain reliable, 
+resilient, and clear to maintain. Effective JavaScript development requires a 
+solid understanding of how to anticipate runtime exceptions, recover gracefully, 
+and systematically diagnose bugs when things go wrong.
+
+
+1. Types of Errors in JavaScript
+
+
+
+
+Error Type		Cause	Can be caught by try...catch?
+1)SyntaxError	 
+
+Code structures that violate language rules (e.g., missing curly braces).	
+❌  Can Not be caught by try...catch
+
+
+2)ReferenceError	
+Attempting to access a variable or function that does not exist or hasn't been initialized.	
+Yes Can be caught by try...catch
+
+3)TypeError	
+Performing an invalid operation on a specific data type (e.g., executing a string as a function).
+Yes Can be caught by try...catch
+
+4)RangeError	
+Using a numeric value outside its allowed range or boundaries (e.g., configuring an array with a negative length).
+Yes Can be caught by try...catch
+
+6)URIError	
+Misusing global URI handling functions like decodeURI() or encodeURI().
+Yes Can be caught by try...catch
+
+
+
+Error Handling Mechanisms
+
+
+The try... catch... finally Block
+
+try {
+  
+  // Code that might fail
+  const user = JSON.parse("{invalid JSON}"); // Throws a SyntaxError at runtime
+  
+} catch (error) {
+  
+  // Code to handle the exception gracefully
+  console.error("Failed to process data:", error.message); 
+  
+} finally {
+
+  // Cleanup code that ALWAYS runs, regardless of an error
+  console.log("Cleanup operation completed.");
+
+}
+
+
+Inspecting the Error Object
+
+1. error.name: The class categorization of the problem (e.g., TypeError).
+2. error.message: A human-readable description outlining what went wrong.
+3. error.stack: The trace history showing exactly which file lines and tracking calls led to the failure
+
+
+
+
+The throw Statement & Custom Errors
+
+You can deliberately generate a custom exception to interrupt 
+execution when business rules are violated
+
+function withdrawFunds(amount, balance) {
+  if (amount > balance) {
+    throw new Error("Insufficient funds for this transaction."); // Custom Error object
+  }
+  return balance - amount;
+}
+
+
+*/
+
+
+
+try {
+  
+  // Code that might fail
+  const user = JSON.parse(`{"id":1}`); // Throws a SyntaxError at runtime
+  console.log(user);
+  
+} catch (error) {
+  
+  // Code to handle the exception gracefully
+  console.error("Failed to process data:", error.message); 
+  
+} finally {
+
+  // Cleanup code that ALWAYS runs, regardless of an error
+  console.log("Cleanup operation completed.");
+
+}
+
+
+</script>
